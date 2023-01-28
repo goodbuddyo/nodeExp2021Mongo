@@ -1,0 +1,36 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "DEBUG=app,app:* nodemon app.js",
+    "debug": "DEBUG=* nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goodbuddyo/nodeExp2021Mongo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goodbuddyo/nodeExp2021Mongo/issues"
+  },
+  "dependencies": {
+    "chalk": "4.1.1",
+    "debug": "4.3.1",
+    "ejs": "^3.1.8",
+    "express": "4.18.2",
+    "mongodb": "3.6.6",
+    "morgan": "1.10.0",
+    "nodemon": "2.0.7"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "delay": 2500,
+    "env": {
+      "PORT": 4000
+    }
+  }
+}
